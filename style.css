@@ -1,0 +1,22 @@
+.body {
+font-family:'Times New Roman', Times, serif;
+margin: 0;
+padding: 0;
+}
+
+.tesdalogo {
+float: right;
+margin-right: 5%;
+margin-top: 2%;
+} 
+
+.Asialogo {
+  margin-left: 5%;
+margin-top: 2%
+}
+
+.navigation {
+    width: 100%;
+
+
+}
