@@ -42,3 +42,24 @@ function nextSlide(){
 
 
 
+
+
+
+
+
+
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
+    });
+}, { threshold: 0.5 }); // Adjust the threshold as needed
+
+const images = document.querySelectorAll('.fade-in');
+images.forEach((image) => {
+    observer.observe(image);
+});
