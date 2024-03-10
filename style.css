@@ -1,22 +1,178 @@
-.body {
-font-family:'Times New Roman', Times, serif;
-margin: 0;
-padding: 0;
+body {
+margin: 0px;
+padding: 0px;
 }
 
-.tesdalogo {
-float: right;
-margin-right: 5%;
-margin-top: 2%;
-} 
 
-.Asialogo {
-  margin-left: 5%;
-margin-top: 2%
+
+
+.navbar ul{
+  list-style: none;
+  background-color: #420c0c ;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: flex; 
+  justify-content: center;
+  padding: 20px;
+
+  
+
 }
 
-.navigation {
-    width: 100%;
+.navbar a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 5px 50px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.navbar li {
+  background-color: #330909;
+  margin: 3px;
 
 
 }
+
+.navbar li:hover {
+  background-color: rgb(248, 170, 1);
+  color: #420c0c;
+  transition: 0.3s;
+
+
+}
+
+
+.navbar li:not(:last-child) a {
+  margin-right: 10px; 
+
+}
+
+
+.logo {
+  position: absolute;
+  left: 50px;
+  top: 13px;
+
+
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+
+}
+
+.slider img {
+  width: 100%;
+  display: none;
+  height: 600px;
+
+
+}
+
+img.displaySlide {
+  display:block;
+  animation-name: nigga;
+  animation-duration: 1.5s;
+
+
+}
+
+.slider button{
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  background-color: #02020241;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 10px;
+  z-index: 2;
+}
+
+.slider button:hover{
+  background-color: rgba(0, 0, 0, 0.616);
+
+
+}
+
+
+.left {
+  left: 0;
+
+
+
+}
+
+.right {
+right: 0;
+
+}
+
+@keyframes nigga {
+  from {opacity: .5}
+  to {opacity: 1}
+
+}
+
+.intro {
+  color: white;
+  width: 100%;
+  position: absolute;
+  text-align: left;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  text-shadow: black 1px 10px 10px;
+  
+
+
+}
+
+.intro h1 {
+  font-size: 50px;
+  margin-left: 100px;
+  
+}
+
+.intro p {
+  font-size: 20px;
+  margin-left: 100px;
+  
+}
+
+.btn { 
+  font-family: "carlito";
+  font-size: 25px; 
+  font-weight: bold;
+  background: #420c0c;
+  padding: 25px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.5s;
+  
+}
+.btn:hover{
+  background-color: rgb(248, 170, 1);
+  color: #420c0c;
+}
+
+
+
+
+
+  
+
+
