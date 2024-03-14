@@ -1,6 +1,9 @@
+
+
 body {
 margin: 0px;
 padding: 0px;
+font-family: 'Osawald', serif;
 }
 
 
@@ -27,11 +30,13 @@ padding: 0px;
   padding: 5px 50px;
   font-size: 20px;
   font-weight: 400;
+  font-family: 'Oswald';
 }
 
 .navbar li {
   background-color: #330909;
   margin: 3px;
+  
 
 
 }
@@ -53,8 +58,8 @@ padding: 0px;
 
 .logo {
   position: absolute;
-  left: 50px;
-  top: 13px;
+  left: 60px;
+  top: 15px;
 
 
 }
@@ -64,13 +69,18 @@ padding: 0px;
   width: 100%;
   margin: auto;
   overflow: hidden;
+  
+ 
+ 
+
+
 
 }
 
 .slider img {
   width: 100%;
   display: none;
-  height: 600px;
+  height: 595px;
 
 
 }
@@ -83,8 +93,19 @@ img.displaySlide {
 
 }
 
+.Introtext {
+  font-family: 'Oswald';
+  font-size: 50px;
+  font-weight: 400;
+
+
+
+
+
+}
+
 .slider button{
-  position: fixed;
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   font-size: 25px;
@@ -108,14 +129,14 @@ img.displaySlide {
 
 
 .left {
-  left: 0;
-
+  left: 10px;
+  
 
 
 }
 
 .right {
-right: 0;
+  right: 10px;
 
 }
 
@@ -142,6 +163,8 @@ right: 0;
 .intro h1 {
   font-size: 50px;
   margin-left: 100px;
+  font-family: 'Oswald';
+  letter-spacing: 5px;
   
 }
 
@@ -153,15 +176,18 @@ right: 0;
 
 .btn { 
   font-family: "carlito";
-  font-size: 25px; 
+  font-size: 20px; 
   font-weight: bold;
   background: #420c0c;
+ 
+
   padding: 25px;
   border-radius: 10px;
   color: white;
   text-decoration: none;
   cursor: pointer;
   transition: 0.5s;
+  font-family: 'Oswald';
   
 }
 .btn:hover{
@@ -170,10 +196,6 @@ right: 0;
 }
 
 
-
-
-
-  
 
 .fade-in {
   width: 100%;
@@ -192,6 +214,7 @@ right: 0;
 
 
 
+
 .image-container {
   display: flex;
   flex-direction: column;
@@ -200,6 +223,61 @@ right: 0;
 
 
 }
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400px;
+  padding: 100px 20vw;
+  
+}
+
+.blue {
+  background: blue;
+
+}
+.red {
+  background: red;
+
+}
+
+.gold {
+  background: gold;
+}
+
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(111% + 1.3px);
+  height: 86px;
+  transform: rotateY(180deg);
+}
+
+.wave .shape-fill {
+  fill: #7E1616;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
