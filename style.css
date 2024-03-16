@@ -60,6 +60,7 @@ font-family: 'Osawald', serif;
   position: absolute;
   left: 60px;
   top: 15px;
+  filter: drop-shadow(0px 0px 6px rgba(255, 213, 2, 5));
 
 
 }
@@ -97,9 +98,16 @@ img.displaySlide {
   font-family: 'Oswald';
   font-size: 50px;
   font-weight: 400;
+  color: white;
+  letter-spacing: 2px;
+
+}
 
 
 
+.Introtext {
+  background-color: #420c0c;
+  
 
 
 }
@@ -196,19 +204,19 @@ img.displaySlide {
 }
 
 
-
 .fade-in {
   width: 100%;
   opacity: 0;
-  transition: opacity 1s ease-in-out, filter 1s ease-in-out;
-  filter: blur(5px);
+  transition: all 1s;
+  transform: translateX(-10%);
+  filter: blur(1px);
 
 }
 
 .fade-in.show {
   opacity: 1;
+  transform: translateX(0);
   filter: blur(0);
-
 }
 
 
@@ -219,10 +227,12 @@ img.displaySlide {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 
 
 
 }
+
 
 section {
   position: relative;
@@ -230,12 +240,12 @@ section {
   flex-direction: column;
   align-items: center;
   min-height: 400px;
-  padding: 100px 20vw;
+  padding: 150px 20vw;
   
 }
 
 .blue {
-  background: blue;
+  background: white;
 
 }
 .red {
@@ -247,33 +257,42 @@ section {
   background: gold;
 }
 
-.wave {
-  position: absolute;
-  top: 0;
-  left: 0;
+.spacer {
+  aspect-ratio: 960/300;
   width: 100%;
-  overflow: hidden;
-  line-height: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+ 
 }
 
-.wave svg {
-  position: relative;
-  display: block;
-  width: calc(111% + 1.3px);
-  height: 86px;
-  transform: rotateY(180deg);
+.layer1 {
+  background-image: url('/layered-waves-haikei\ \(4\).svg')
+
+  
 }
 
-.wave .shape-fill {
-  fill: #7E1616;
+.layer2 {
+  background-image: url('./layered\ real\ \(3\).svg');
+
+
 }
 
 
 
+.txth2 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Oswald';
+  position: absolute;
+top: 140%;
+width: 60%;
+font-size: 30px;
 
 
 
-
+}
 
 
 
