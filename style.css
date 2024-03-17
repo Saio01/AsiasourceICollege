@@ -240,7 +240,7 @@ body {
   
   }
   .red {
-    background: red;
+    background:white;
   
   }
   
@@ -489,3 +489,57 @@ body {
     position: absolute;
     left: 125px;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .custom-shape-divider-bottom-1710688000 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1710688000 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 69px;
+}
+
+.custom-shape-divider-bottom-1710688000 .shape-fill {
+    fill: #611111;
+}
+
+.custom-shape-divider-top-1710688236 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1710688236 svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 69px;
+}
+
+.custom-shape-divider-top-1710688236 .shape-fill {
+  fill: #611111;
+}
